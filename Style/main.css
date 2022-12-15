@@ -122,20 +122,20 @@ color: white;
     padding-top: 10px;
 }
 
-.mh-signin > button{
-    height: 50px;
-    width: 120px;
+.mh-signin >a> button{
+    height: 40px;
+    width: 70px;
     border: 0px;
-    font-size: 20px;
+    font-size: 13px;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 10px;
     background-color: #fc2779;
     color: white;
 }
 
 i.fa.fa-shopping-bag.sb{
     font-size: 25px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .mh-signin > input{
@@ -270,3 +270,160 @@ i.fa.fa-shopping-bag.sb{
     border: 1px solid grey;
     border-radius: 7px;
 }
+
+
+
+/* Footer */
+#footer{
+    height: 1000px;
+    margin-top: 50px;
+}
+
+#gray{
+    background-color: #f3f3f3;
+    height: 50px;
+}
+
+#contact{
+    height: 170px;
+    background-color: #3f414d;
+    display: flex;
+    padding: 20px 0 0 8%;
+    justify-content: space-between;
+}
+
+#contact > :nth-child(1){
+    /* border: 1px solid black; */
+    height:90%;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+}
+
+#contact > :nth-child(1) > input{
+    height: 30px;
+    width: 60%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+    #contact > :nth-child(1) > button{
+        height: 32px;
+        width: 70px;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+    }
+
+#contact > :nth-child(2){
+    /* border: 1px solid black; */
+    height:90%;
+    width: 35%;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0 0 0;
+    word-spacing: 3px;
+}
+
+#contact > :nth-child(3){
+    /* border: 1px solid black; */
+    height:90%;
+    width: 35%;
+   padding: 10px 17px 0 0;
+    color: white;
+    font-size: 19px;
+    
+}
+
+#contact > :nth-child(2) > span {
+        font-size: 60px;
+        margin: 0 0 0 29px
+}
+
+
+#foot-detail {
+    background-color: #8c8d94;
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3% 0 0 0;
+}
+
+#foot-detail > div{
+    height: 70%;
+    width: 18%;
+    /* border: 1px solid white; */
+    color: white;
+    line-height: 30px;
+    font-family: Inter, Roboto, Arial, sans-serif;;
+}
+
+#foot-detail > div > h2{
+    margin-bottom: 10px;
+}
+
+#foot-detail > div >ul> li:hover{
+    color: #fc2779;
+}
+
+
+#foot-udetail{
+    display: flex;
+    /* border: 5px solid rebeccapurple; */
+    height: 25%;
+    justify-content: space-around;
+    padding: 1% 0 0 3%;
+    background-color: #f3f3f3;
+}
+
+#foot-udetail > div{
+    /* border: 1px solid black; */
+    height: 90%;
+    width: 19%;
+    padding: 5% 0 0 0;
+    background-color: #f3f3f3;
+}
+
+#foot-udetail img{
+
+    height: 35%;
+    width: 35%;
+}
+
+
+#pinkbar{
+    height: 8%;
+    background-color: #fc2779;
+    text-align: center;
+    padding: 10px 0 0 0;
+    color: white;
+    line-height: 20px;
+}
+
+#pinkbar > li{
+    display: inline;
+    color: white;
+    margin: 18px;
+    font-weight: bolder;
+}
+
+#pinkbar > p{
+    margin-top: 10px;
+}
+
+#foot-udetail >.social{
+    text-align: center;
+    font-size: 18px;
+}
+
+#down{
+    height: 5%;
+    background-color: #f3f3f3;
+}
+
+#foot-udetail > #data{
+    display: flex;
+    line-height: 30px;
+}
+

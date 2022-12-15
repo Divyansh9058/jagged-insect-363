@@ -2,9 +2,6 @@
 
 let top_container = document.querySelector("#top-brand");
 
-
-
-
     fetch("Scripts/top_brands.json")
     .then((responseObject)=>{
     return  responseObject.json();
