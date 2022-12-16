@@ -1,0 +1,45 @@
+[
+    {
+      "type": "foundation",
+      "name": "Nykaa SkinShield Anti-Pollution Matte Foundation",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/f/ef153f68904245707408_rev1.jpg",
+      "price": "400",
+      "MRP": "700",
+      "id": "1"
+    },
+    {
+      "type": "foundation",
+      "name": "M.A.C Studio Fix Fluid SPF 15",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/3/a3ee29a773602103591_rv__1.jpg",
+      "price": "2950",
+      "MRP": "0",
+      "id": "2"
+    },
+    {
+      "type": "foundation",
+      "name": "Lakme Absolute Skin Dew Serum Foundation",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/d/fdedcfcLAKME00000601_2.jpg",
+      "price": "875",
+      "MRP": "875",
+      "id": "3"
+    },
+    {
+      "type": "foundation",
+      "name": "Kay Beauty Hydrating Foundation",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/8/b8d84e88904330902602_1.jpg",
+      "price": "900",
+      "MRP": "1200",
+      "id": "4"
+    },
+    {
+      "type": "foundation",
+      "name": "Maybelline New York Fit Me Matte+Poreless Liquid",
+      "image": "https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/6/66e316c6902395646860.jpg",
+      "price": "419",
+      "MRP": "599",
+      "id": "5"
+    }
+
+
+
+]
