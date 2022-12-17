@@ -9,12 +9,14 @@
 header{
     height: 200px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #header{
     height: 100%;
     width: 100%;
+    position: fixed;
+    margin-top: -1px;
 }
 
 
@@ -22,9 +24,8 @@ header{
 /* Upper-Header */
 
  #header > :nth-child(1){
-    height: 30%;
     /* border: 1px solid green; */
-    background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2021/common-strip.jpg);
+    background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/2022/cms/banner/top_strip_16dec22.jpg);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-around;
@@ -34,7 +35,7 @@ header{
  #upper-header > :nth-child(1){
     width: 80%;
     /* border: 1px solid black; */
-    color: #000;
+    color: white;
     text-decoration: none;
     padding-top: 10px;
     padding-left:25px ;
@@ -42,14 +43,14 @@ header{
  }
 
  #upper-header > :nth-child(1) > marquee >a{
-    color: #000;
+    color: white;
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
  }
 
  #upper-header > :nth-child(1) > marquee >a:hover{
-    color: white;
+    color: black;
  }
 #upper-header > :nth-child(2){
     width: 87%;
@@ -67,10 +68,11 @@ header{
     width: 90%;
     margin: auto;
     padding-top: 10px;
+    color: white;
     /* text-align: center; */
     font-weight: bolder;
     font-size: 17px;
-    border-right: 2px solid black;
+    border-right: 2px solid white;
 }
 
 #upper-header > div:nth-child(2) > div:hover{
@@ -81,11 +83,11 @@ color: white;
 /* Middle-Header */
 
 #middle-header{
-    border: 1px solid purple;
-    height: 47%;
-    width: 90%;
+    /* border: 1px solid purple; */
+    height: 15%;
+    width: 100%;
     display: flex;
-    
+    background-color: white;
     margin: auto;
 }
 
@@ -93,15 +95,16 @@ color: white;
     height: 90%px;
     width: 110px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 30px;
 
 }
 
 .mh-searchbar{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 110%;
     height: 100%;
     display: flex;
+    background-color: white;
 }
 
 .mh-searchbar li{
@@ -112,14 +115,14 @@ color: white;
 }
 
 .mh-searchbar ul{
-    margin-top: 25px;
+    margin-top: 38px;
 }
 
 .mh-signin{
     height: 100%;
     width:60%;
-    border : 1px solid red;
-    padding-top: 10px;
+    /* border : 1px solid red; */
+    padding-top: 30px;
 }
 
 .mh-signin >a> button{
@@ -146,6 +149,8 @@ i.fa.fa-shopping-bag.sb{
 
 #lower-header{
     display: flex;
+    background-color: white;
+    height: 7%;
 }
 
 #lower-header li{
@@ -156,10 +161,13 @@ i.fa.fa-shopping-bag.sb{
 }
 
 #lower-header ul{
-    margin-top: 0px;
+    margin-top: 1%;
     margin-left: 5%;
 }
 
+#lower-header img{
+    margin-left: 35px;
+}
 
 
 /* banner down */
@@ -218,7 +226,7 @@ i.fa.fa-shopping-bag.sb{
 }
 
 #top-brand > div{
-    border:1px solid gray;
+    border:1px solid #8c8d94;
     border-radius: 7px;
     width: 100%;
 }
@@ -261,13 +269,13 @@ i.fa.fa-shopping-bag.sb{
 
 #only-nyka > div > img{
     width: 100%;
-    border-radius: 7px;
+    border-radius: 7px 7px 0 0;
 }
 
 
 
 #only-nyka > div{
-    border: 1px solid grey;
+    border: 1px solid #8c8d94;
     border-radius: 7px;
 }
 
@@ -426,4 +434,91 @@ i.fa.fa-shopping-bag.sb{
     display: flex;
     line-height: 30px;
 }
+
+
+
+/* Product page */
+
+.sidenav {
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 28%;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+  
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #fc2779;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  .accordian > i{
+    float: right;
+  }
+
+  #main-product{
+    height: 100%;
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin-left: 18%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    padding: 1% 0 0 3%;
+  }
+
+  #main-product > div{
+    /* border: 1px solid palevioletred; */
+    width: 90%;
+    text-align: center;
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  #main-product > div > img{
+    width:80%;
+    height: 65%;
+  }
+
+  #main-product > div > button{
+    
+    margin-top: 20px;
+  }
 
