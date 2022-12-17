@@ -1,10 +1,17 @@
 let top_container = document.querySelector("#main-product");
 
+let foundation = document.getElementById("foundation");
+
+let kajal = document.getElementById("kajal");
+
+
     fetch("Scripts/product.json")
     .then((responseObject)=>{
     return  responseObject.json();
   })
   .then((actualData)=>{
+    fetchedData = actualData;
+    arr = actualData;
     TopBrandCard(actualData)
   })
   .catch((error)=>{
@@ -13,7 +20,7 @@ let top_container = document.querySelector("#main-product");
 
 
 function TopBrandCard(data){
-
+  top_container.innerHTML = null;
 data.forEach((element,index)=>{
       let card = document.createElement("div");
 
@@ -35,3 +42,54 @@ data.forEach((element,index)=>{
 
 
 }
+
+
+
+let fetchedData = [];
+
+    foundation.addEventListener("click",()=>{
+
+      let filters = fetchedData.filter((element)=>{
+            if(element.type === foundation.value){
+              return true;
+            }
+            else{
+              false;
+            }
+      });
+         TopBrandCard(filters)
+    });
+
+    kajal.addEventListener("click",()=>{
+
+      let filters = fetchedData.filter((element)=>{
+            if(element.type === kajal.value){
+              return true;
+            }
+            else{
+              false;
+            }
+      });
+         TopBrandCard(filters)
+    });
+
+let arr=[];
+
+document.getElementById("h2l").addEventListener("click", (e) => {
+    let sortBy = e.target.value;
+    if (sortBy === "h2l") {
+      // sort in desc
+      let newData = arr.sort((a, b) => +b.price - +a.price);
+      TopBrandCard(newData);
+    }
+  });
+
+
+  document.getElementById("l2h").addEventListener("click", (e) => {
+    let sortBy = e.target.value;
+    if (sortBy === "l2h") {
+      // sort in desc
+      let newData = arr.sort((a, b) => +a.price - +b.price);
+      TopBrandCard(newData);
+    }
+  });

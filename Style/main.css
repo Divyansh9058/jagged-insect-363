@@ -475,7 +475,7 @@ i.fa.fa-shopping-bag.sb{
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
-    height: 350px;
+    height: 270px;
   }
   
   .sidenav a {
@@ -561,4 +561,15 @@ i.fa.fa-shopping-bag.sb{
     margin-top: 20px;
     border: 0;
   }
+
+
+  .panel button{
+    height: 50px;
+    width: 120px;
+    border: 1px solid #fc2779;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+
 
