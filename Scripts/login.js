@@ -16,9 +16,11 @@ let success = document.createElement("h1");
         signin.forEach(function (element,index) {
               if(element.Email==myform.email.value && element.Password == myform.psw.value){
                 success.innerText="Sign in Successful";
-              }else{
-                success.innerText="Wrong Credentials";
+                alert("Login Successfull")
+               window.location.replace("index.html");
+                // window.location = "index.html";
               }
+             
         });
 
 

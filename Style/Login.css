@@ -19,7 +19,7 @@ body{
 }
 
 
-#main > img{
+#main  img{
     height: 80px;
     width:250px;
     margin-left: 10%;
@@ -38,6 +38,7 @@ body{
     border: 3px solid #fc2779;
     border-radius: 10px;
     width: 100%;
+   
   }
   
   /* Full-width input fields */
